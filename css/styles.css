@@ -1,5 +1,5 @@
 :root {
-    font-size: 62.5%;
+     font-size: 62.5%; 
 --background-color: #251F24;
 --background-content: #3A3539;
 
@@ -10,6 +10,7 @@
 
 body {
     background-color: var(--background-color);
+    font-family: 'Nunito', sans-serif;
 }
 
 h1,
@@ -21,13 +22,20 @@ h4 {
 
 h1 {
     font-size: 6.4rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 p {
+    font-size: 1.4rem;
+    font-weight: 400;
     color: var(--content-color);
 }
 
+.hero {
+    background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+    width: 100%;
+    height: 350px;
+}
 /* Header section */
 details summary {
     color: var(--title-color);
