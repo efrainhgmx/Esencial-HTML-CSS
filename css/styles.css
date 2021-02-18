@@ -1,0 +1,45 @@
+:root {
+    font-size: 62.5%;
+--background-color: #251F24;
+--background-content: #3A3539;
+
+--title-color: white;
+--content-color: #A5A3A5;
+
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+}
+
+h1 {
+    font-size: 6.4rem;
+    font-weight: bold;
+}
+
+p {
+    color: var(--content-color);
+}
+
+/* Header section */
+details summary {
+    color: var(--title-color);
+}
+
+nav a {
+    color: var(--content-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--title-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
