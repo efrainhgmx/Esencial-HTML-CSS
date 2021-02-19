@@ -98,6 +98,7 @@ section p {
 
 pre {
     background-color: var(--background-content);
+    padding: 40px;
     color: var(--content-color);
     font-size: 1.6rem;
 }
