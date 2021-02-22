@@ -8,6 +8,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--background-color);
     font-family: 'Nunito', sans-serif;
@@ -36,6 +40,9 @@ h3 {
     font-size: 3.4rem;
     font-weight: 600;
     margin-bottom: 16px;
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color);
 }
 
 h1::before {
@@ -57,10 +64,22 @@ h1 + p {
 
 .section-content h3 {
     counter-increment: titleList;
+    padding-bottom: 8px;
 }
 
 .section-content h3::before {
     content: counter(titleList, decimal) '.- ';
+}
+
+.section-content h3::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 p {
@@ -76,6 +95,24 @@ p {
     height: 350px;
 }
 /* Header section */
+header {
+    font-size: 1.4rem;
+    width: 188px;
+    position: absolute;
+    top: 64px;
+    left: -234px;
+    z-index: 1;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+}
+
+.header-content {
+    position: relative;
+}
+
 details summary {
     color: var(--title-color);
 }
