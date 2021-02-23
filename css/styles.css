@@ -131,7 +131,7 @@ nav a:hover {
 /* Main Section */
 
 .wrapper {
-    width: 720px;
+    max-inline-size: 902px;
     margin: auto;
 }
 
@@ -184,4 +184,13 @@ blockquote span {
 
 blockquote span::before {
     content: '- ';
+}
+
+figure {
+    width: 650px;
+    margin: auto;
+}
+
+figure img {
+    width: 100%;
 }
