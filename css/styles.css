@@ -27,8 +27,7 @@ h4 {
 h1 {
     font-size: 6.4rem;
     font-weight: 700;
-    margin-top: 64px;
-    margin-bottom: 16px;
+    margin-block: 64px 16px;
 }
 
 h2 {
@@ -107,6 +106,7 @@ header {
 .header {
     position: sticky;
     top: 0;
+    padding-inline-start: 35px;
 }
 
 .header-content {
@@ -115,6 +115,10 @@ header {
 
 details summary {
     color: var(--title-color);
+}
+
+details ol li {
+    line-height: 2.4rem;
 }
 
 nav a {
@@ -135,6 +139,14 @@ nav a:hover {
     margin: auto;
 }
 
+.main {
+    margin: auto;
+}
+
+.main-content {
+    padding-inline: 16px;
+}
+
 section p {
     font-size: 1.7rem;
 }
@@ -144,6 +156,7 @@ pre {
     padding: 40px;
     color: var(--content-color);
     font-size: 1.6rem;
+    overflow: auto;
 }
 
 .section-content:nth-of-type(2) {
