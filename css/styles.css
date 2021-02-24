@@ -239,3 +239,30 @@ figure img {
 .slider-bullet:hover {
     background-color: var(--content-color);
 }
+
+.form input {
+    box-sizing: border-box;
+    inline-size: 100%;
+    border: 1px solid var(--content-color);
+    border-radius: 8px;
+    background-color: transparent;
+    padding-inline: 16px;
+    padding-block: 12px;
+    color: white;
+    font-size: 1.6rem;
+    margin-block-end: 24px;
+}
+
+.form input[type="submit"] {
+    background-color:#157EFB;
+    border: none;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #3e8ce8;
+    cursor: pointer;
+}
+
+.form input::-webkit-input-placeholder {
+    color: var(--content-color);
+}
