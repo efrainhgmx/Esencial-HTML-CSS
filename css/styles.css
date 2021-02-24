@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 :root {
      font-size: 62.5%; 
 --background-color: #251F24;
@@ -210,4 +206,36 @@ figure {
 
 figure img {
     width: 100%;
+}
+
+.slider-container {
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+    text-align: center;
+    margin-block-start: 10px;
+}
+
+.slider-bullet {
+    display: inline-block;
+    block-size: 15px;
+    inline-size: 15px;
+    margin-inline-start: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.slider-bullet:hover {
+    background-color: var(--content-color);
 }
