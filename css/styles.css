@@ -26,18 +26,18 @@ h4 {
 }
 
 h1 {
-    font-size: 6.4rem;
+    font-size: 4rem;
     font-weight: 700;
     margin-block: 64px 16px;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3.4rem;
     font-weight: 700;
 }
 
 h3 {
-    font-size: 3.4rem;
+    font-size: 2.4rem;
     font-weight: 600;
     margin-bottom: 16px;
     position: sticky;
@@ -59,7 +59,6 @@ h1 + p {
 
 .section-content {
     counter-reset: titleList;
-    margin-top: 80px;
 }
 
 .section-content h3 {
@@ -96,21 +95,10 @@ p {
 /* Header section */
 header {
     font-size: 1.4rem;
-    width: 188px;
-    position: absolute;
-    top: 64px;
-    left: -234px;
-    z-index: 1;
-}
-
-.header {
-    position: sticky;
-    top: 0;
-    padding-inline-start: 35px;
 }
 
 .header-content {
-    position: relative;
+    padding-inline: 20px;
 }
 
 details summary {
@@ -136,6 +124,7 @@ nav a:hover {
 
 .wrapper {
     max-inline-size: 902px;
+    min-inline-size: 300px;
     margin: auto;
 }
 
@@ -265,4 +254,47 @@ figure img {
 
 .form input::-webkit-input-placeholder {
     color: var(--content-color);
+}
+
+@media screen and (min-width: 1365px) {
+
+    h1 {
+        font-size: 6.4rem;
+    }
+
+    h2 {
+        font-size: 4rem;     
+    }
+
+    h3 {
+        font-size: 3.4rem;
+    }
+
+    .hero {
+        block-size: 350px;
+    }
+
+    header {
+        width: 188px;
+        position: absolute;
+        top: 64px;
+        left: -234px;
+        z-index: 1;
+    }
+    
+    .header {
+        position: sticky;
+        top: 0;
+        padding-inline-start: 35px;
+    }
+    
+    .header-content {
+        position: relative;
+        padding-inline: 0;
+    }
+
+    .section-content {
+        margin-block-start: 80px;
+    }
+
 }
