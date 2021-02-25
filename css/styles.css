@@ -197,6 +197,10 @@ figure img {
     width: 100%;
 }
 
+figcaption {
+    font-size: 1.4rem;
+    color: var(--content-color);
+}
 .slider-container {
     display: block;
     overflow: auto;
